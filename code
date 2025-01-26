@@ -1,0 +1,17 @@
+import pandas as pd 
+
+# Load Jan 2023 datasets 
+df1 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Jan2023\\Jan2023\\dot1_0123.csv")
+df2 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Jan2023\\Jan2023\\dot2_0123.csv")
+df3 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Jan2023\\Jan2023\\dot3_0123.csv")
+
+# Display column names and first few rows of each dataset for inspection
+df1_info = {"columns": df1.columns.tolist(), "preview": df1.head()}
+df2_info = {"columns": df2.columns.tolist(), "preview": df2.head()}
+df3_info = {"columns": df3.columns.tolist(), "preview": df3.head()}
+
+df1_info, df2_info, df3_info
+
+new_df1=df1.merge(df2, how='inner', on='USASTATE')
+new_df1
+  
