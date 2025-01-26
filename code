@@ -1,17 +1,148 @@
-import pandas as pd 
+import pandas as pd
 
 # Load Jan 2023 datasets 
 df1 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Jan2023\\Jan2023\\dot1_0123.csv")
 df2 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Jan2023\\Jan2023\\dot2_0123.csv")
 df3 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Jan2023\\Jan2023\\dot3_0123.csv")
 
-# Display column names and first few rows of each dataset for inspection
-df1_info = {"columns": df1.columns.tolist(), "preview": df1.head()}
-df2_info = {"columns": df2.columns.tolist(), "preview": df2.head()}
-df3_info = {"columns": df3.columns.tolist(), "preview": df3.head()}
+# Combine all Jan 2023 datasets into one
+combined_df = pd.concat([df1, df2, df3], ignore_index=True)
+jan2023 = combined_df
+jan2023
 
-df1_info, df2_info, df3_info
+# Load Feb 2023 datasets 
+df1 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Feb2023\\Feb2023\\dot1_0223.csv")
+df2 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Feb2023\\Feb2023\\dot2_0223.csv")
+df3 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Feb2023\\Feb2023\\dot3_0223.csv")
 
-new_df1=df1.merge(df2, how='inner', on='USASTATE')
-new_df1
+# Combine all datasets into one
+combined_df = pd.concat([df1, df2, df3], ignore_index=True)
+feb2023 = combined_df
+feb2023
+
+# Load March 2023 datasets 
+df1 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\March2023\\March2023\\dot1_0323.csv")
+df2 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\March2023\\March2023\\dot2_0323.csv")
+df3 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\March2023\\March2023\\dot3_0323.csv")
+
+
+# Combine all datasets into one
+combined_df = pd.concat([df1, df2, df3], ignore_index=True)
+March2023 = combined_df
+March2023
   
+
+# Load April 2023 datasets 
+df1 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\April2023\\April2023\\dot1_0423.csv")
+df2 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\April2023\\April2023\\dot2_0423.csv")
+df3 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\April2023\\April2023\\dot3_0423.csv")
+
+
+# Combine all datasets into one
+combined_df = pd.concat([df1, df2, df3], ignore_index=True)
+April2023 = combined_df
+April2023
+
+
+# Load May 2023 datasets 
+df1 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\May2023\\May2023\\dot1_0523.csv")
+df2 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\May2023\\May2023\\dot2_0523.csv")
+df3 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\May2023\\May2023\\dot3_0523.csv")
+
+
+# Combine all datasets into one
+combined_df = pd.concat([df1, df2, df3], ignore_index=True)
+May2023 = combined_df
+May2023
+
+
+# Load June 2023 datasets 
+df1 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\June2023\\June2023\\dot1_0623.csv")
+df2 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\June2023\\June2023\\dot2_0623.csv")
+df3 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\June2023\\June2023\\dot3_0623.csv")
+
+
+# Combine all datasets into one
+combined_df = pd.concat([df1, df2, df3], ignore_index=True)
+June2023 = combined_df
+June2023
+
+# Load July 2023 datasets 
+df1 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\July2023\\July2023\\dot1_0723.csv")
+df2 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\July2023\\July2023\\dot2_0723.csv")
+df3 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\July2023\\July2023\\dot3_0723.csv")
+
+
+# Combine all datasets into one
+combined_df = pd.concat([df1, df2, df3], ignore_index=True)
+July2023 = combined_df
+July2023
+
+
+# Load August 2023 datasets 
+df1 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Aug2023\\Aug2023\\dot1_0823.csv")
+df2 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Aug2023\\Aug2023\\dot2_0823.csv")
+df3 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Aug2023\\Aug2023\\dot3_0823.csv")
+
+
+# Combine all datasets into one
+combined_df = pd.concat([df1, df2, df3], ignore_index=True)
+Aug2023 = combined_df
+Aug2023
+
+
+# Load September 2023 datasets 
+df1 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\sept2023\\sept2023\\dot1_0923.csv")
+df2 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\sept2023\\sept2023\\dot2_0923.csv")
+df3 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\sept2023\\sept2023\\dot3_0923.csv")
+
+
+# Combine all datasets into one
+combined_df = pd.concat([df1, df2, df3], ignore_index=True)
+Sept2023 = combined_df
+Sept2023
+
+
+# Load October 2023 datasets 
+df1 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Oct2023\\Oct2023\\dot1_1023.csv")
+df2 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Oct2023\\Oct2023\\dot2_1023.csv")
+df3 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Oct2023\\Oct2023\\dot3_1023.csv")
+
+
+# Combine all datasets into one
+combined_df = pd.concat([df1, df2, df3], ignore_index=True)
+oct2023 = combined_df
+oct2023
+
+
+# Load November 2023 datasets 
+df1 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Nov2023\\Nov2023\\dot1_1123.csv")
+df2 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Nov2023\\Nov2023\\dot2_1123.csv")
+df3 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\Nov2023\\Nov2023\\dot3_1123.csv")
+
+
+# Combine all datasets into one
+combined_df = pd.concat([df1, df2, df3], ignore_index=True)
+nov2023 = combined_df
+nov2023
+
+
+# Load December 2023 datasets 
+df1 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\December2023\\dot1_1223.csv")
+df2 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\December2023\\dot2_1223.csv")
+df3 = pd.read_csv("C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2023\\December2023\\dot3_1223.csv")
+
+
+# Combine all datasets into one
+combined_df = pd.concat([df1, df2, df3], ignore_index=True)
+dec2023 = combined_df
+dec2023
+
+
+# Combining all 2023 datasets
+dataframes = [jan2023, feb2023, March2023, April2023, May2023, June2023, July2023, Aug2023, Sept2023, oct2023, nov2023, dec2023]
+
+# Concatenate them into one large DataFrame
+data_2023 = pd.concat(dataframes, ignore_index=True)
+data_2023
+
