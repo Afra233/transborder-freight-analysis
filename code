@@ -24,3 +24,100 @@ for month in months:
 print(monthly_data_2023)
 
 
+# Define the base directory and months for 2020
+base_dir = "C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2020"
+months = ["Jan2020", "Feb2020", "March2020", "April2020", "May2020", "June2020", "July2020", "August2020", "September2020"]
+
+# Dictionary to store combined data for each month
+monthly_data_2020 = {}
+
+for month in months:
+    # Create the path for the month's folder
+    month_dir = os.path.join(base_dir, month, month)
+    
+    # Load and concatenate all CSV files in the month's folder
+    files = [f for f in os.listdir(month_dir) if f.endswith(".csv")]
+    dataframes = [pd.read_csv(os.path.join(month_dir, file)) for file in files]
+    monthly_data_2020[month] = pd.concat(dataframes, ignore_index=True)
+
+
+print(monthly_data_2020)
+
+
+# Define the base directory and months for 2021
+base_dir = "C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2021"
+months = ["January2021", "February2021", "March2021", "April2021", "May2021", "June2021", "July2021", "August2021", "Sept2021", "Oct2021", "Nov2021", "Dec2021"]
+
+# Dictionary to store combined data for each month
+monthly_data_2021 = {}
+
+for month in months:
+    # Create the path for the month's folder
+    month_dir = os.path.join(base_dir, month, month)
+    
+    # Load and concatenate all CSV files in the month's folder
+    files = [f for f in os.listdir(month_dir) if f.endswith(".csv")]
+    dataframes = [pd.read_csv(os.path.join(month_dir, file)) for file in files]
+    monthly_data_2021[month] = pd.concat(dataframes, ignore_index=True)
+
+
+print(monthly_data_2021)
+
+
+# Define the base directory and months for 2024
+base_dir = "C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2024"
+months = ["Jan2024", "Feb2024", "March2024", "April2024", "May2024", "June2024", "July2024", "August2024", "september2024"]
+
+# Dictionary to store combined data for each month
+monthly_data_2024 = {}
+
+for month in months:
+    # Create the path for the month's folder
+    month_dir = os.path.join(base_dir, month, month)
+    
+    # Load and concatenate all CSV files in the month's folder
+    files = [f for f in os.listdir(month_dir) if f.endswith(".csv")]
+    dataframes = [pd.read_csv(os.path.join(month_dir, file)) for file in files]
+    monthly_data_2024[month] = pd.concat(dataframes, ignore_index=True)
+
+
+print(monthly_data_2024)
+
+
+# Define the base directory and months for 2022
+base_dir = "C:\\Users\\LENOVO\\Desktop\\Azubi Africa TMP\\data\\2022"
+months = ["Jan2022", "Feb2022", "March2022", "April2022", "May2022", "June2022", "July2022", "August2022", "September2022", "October2022", "November2022", "December2022"]
+
+# Dictionary to store combined data for each month
+monthly_data_2022 = {}
+
+for month in months:
+    # Create the path for the month's folder
+    month_dir = os.path.join(base_dir, month, month)
+    
+    # Load and concatenate all CSV files in the month's folder
+    files = [f for f in os.listdir(month_dir) if f.endswith(".csv")]
+    dataframes = [pd.read_csv(os.path.join(month_dir, file)) for file in files]
+    monthly_data_2022[month] = pd.concat(dataframes, ignore_index=True)
+
+
+print(monthly_data_2022)
+
+
+# Concatenate all monthly data into one big dataset
+big_dataset = pd.concat(
+    [
+        *monthly_data_2020.values(),
+        *monthly_data_2021.values(),
+        *monthly_data_2022.values(),
+        *monthly_data_2023.values(),
+        *monthly_data_2024.values()
+    ],
+    ignore_index=True
+)
+
+
+big_dataset.shape  # Check the number of rows and columns
+
+
+big_dataset.head()  # Display the first few rows
